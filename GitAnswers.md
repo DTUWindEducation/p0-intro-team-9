@@ -9,6 +9,7 @@
 	BitBucket: is a Git based source code repository hosting service owned by Atlassian. 
 
 3.	Why would I ever want to use git, but not GitLab? 
+	Git can be used offline and locally while gitlab cannot.
 
 4.	What are the steps to update the GitLab server with some changes I made on my computer? 
 	git checkout <branch-name>
@@ -32,6 +33,7 @@
 	Git was not dessigned to be used on binnary files, since it does not track the changes very well.
 
 9.	Should I from now on version my word and powerpoint slides using git? Why/why not?
+	Word and powerpoint already have its own version control and automatically saves so it wouldn't make sense to version them.
 
 10.	What could happen when I push my latest commit to the remote repository without pulling first?
 	May cause rejection if remote has new commits.
@@ -41,3 +43,4 @@
 	Git tries to fetch and merge the remote changes into your working branch. Depending on the state of your local repository, it can give a 	conflict trying to merge the files.
 
 12.	What is the difference between branching and forking?
+	Branching creates a branch within the repository while forking creates a branch outside of the repository.
