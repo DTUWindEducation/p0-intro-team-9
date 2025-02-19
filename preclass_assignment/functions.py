@@ -19,10 +19,14 @@ def goldilocks(length):
 def greet(name):
     print("Hello, " + name + "!")
 
+
+
 def fibonacci_stop(num):
+    fib_list = []
     a, b = 0, 1
     while a < num:
-        print(a, end=' ')
-        a, b = b, a+b
-    print()
+        fib_list.append(a)
+        a, b = b, a + b
+    print(f"The Fibonacci values up to {num} is: {fib_list}")
+    return fib_list
     
