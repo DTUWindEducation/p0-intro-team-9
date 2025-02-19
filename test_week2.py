@@ -50,8 +50,8 @@ def test_clean_pitch():
     # given
     x = [-1, 2, 6, 95]
     status = [1, 0, 0, 0]
-    exp_out = [-999, 2, 6, 95]
+    exp_out = [-999, 2, 6, -999]
     # when
-    out = fxn.clean_pitch(x)
+    out = fxn.clean_pitch(x, status)
     # then
     assert exp_out == out  # tests if output equals to input
