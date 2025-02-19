@@ -17,6 +17,7 @@ def fibonacci_stop(max_value):
         fibonacci_list.append(fibonacci_value)
         fibonacci_value = fibonacci_list[-2] + fibonacci_list[-1]
     print(f"The Fibonacci lower than {max_value} is: {fibonacci_list}")
+    return fibonacci_list
 
 def clean_pitch(measurement,status):
     measurement_cleaned = measurement
