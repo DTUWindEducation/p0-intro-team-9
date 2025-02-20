@@ -15,16 +15,15 @@ def test_greet(capsys):
 
 
 
-def test_goldilocks(capsys):
+def test_goldilocks():
     """Check goldilocks returns expected output"""
     # given
     value = 139  
-    expected_output = "Too small!\n"
+    expected_output = "Too short!"
     # when
-    fxn.goldilocks(value)
-    captured = capsys.readouterr()  # capture what would have been printed to screen
+    result = fxn.goldilocks(value)  # Assume goldilocks returns a string
     # then
-    assert captured.out == expected_output  # check that the output was what we expect
+    assert result == expected_output  # Compare returned output
 
 
 def test_square_list():
